@@ -3,8 +3,8 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../config';
 ---
 
-<header class="flex md:justify-end justify-center ">
-	<nav>
+<header class="fixed flex w-screen justify-center">
+	<nav class="p-4 font-mono shadow-md md:justify-end rounded-md backdrop-blur-sm justify-center">
 		<HeaderLink href="/">home</HeaderLink>
 		<HeaderLink href="/about">about</HeaderLink>
 		<HeaderLink href="/works">works</HeaderLink>

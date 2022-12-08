@@ -8,6 +8,10 @@ module.exports = {
 				mono: ['Ubuntu Mono', 'monospace'],
 				display: ['Clash Display', 'sans-serif'],
 			  },
+			colors: {
+				purple: "#8242B9",
+				pink: "#B82F8C"
+			}
 		},
 	},
 	plugins: [],
