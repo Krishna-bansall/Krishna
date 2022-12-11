@@ -3,7 +3,6 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import {BackgroundWaves} from '../components/BackgroundWaves.jsx';
-// import HandWave from '../../public/images/hand-wave.pmn'
 import {GradientText} from '../components/TextVariants.jsx';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 ---
@@ -19,49 +18,46 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 			<div class="-z-10 flex justify-end absolute h-screen w-[100vw]">
 				<img class="md:self-auto self-end min-w-screen" src="/images/curve.svg" alt="" srcset="">
 				<div class="absolute flex justify-center md:justify-end self-end">
-					<img class="translate-y-44 w-full sm:w-3/4 md:w-1/2" src="/images/graphic.png" alt="" srcset="">
+					<img class="translate-y-44  w-full sm:w-3/4 md:w-1/2" src="/images/graphic.png" alt="" srcset="">
 				</div>
 			</div>
 			<section class="p-0 w-screen sm:p-10 md:px-36 hero h-[100vh] flex flex-col justify-center text-center md:text-left align-middle ">
 				<h3 class="text-white text-2xl sm:text-4xl font-main">hey i'm</h3>
 				<div class="flex flex-row md:justify-start justify-center ">
-					<GradientText text="Krishna"/>
+					<GradientText className=" sm:text-6xl text-4xl" >Krishna</GradientText>
 					<img class="ml-4 w-10 sm:w-14" src="/images/hand-wave.png" alt="" srcset="">
 				</div>
 				
 			</section>
-			<div class=" p-10">
-				<p>
-					This template comes with a few integrations already configured in your
-					<code>astro.config.mjs</code> file. You can customize your setup with
-					<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-					React, or Vue to your project.
-				</p><p>
-					Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-					template serves as a lightweight, minimally-styled starting point for anyone looking to build
-					a personal website, blog, or portfolio with Astro.
-				</p>
-				<p>Here are a few ideas on how to get started with the template:</p>
-				<ul>
-					<li>Edit this page in <code>src/pages/index.astro</code></li>
-					<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-					<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-					<li>Check out the included blog posts in <code>src/pages/blog/</code></li>
-					<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-				</ul>
-				<p>
-					Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-						>read the docs
-					</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-				</p>
-				<p>
-					Looking for a blog template with a bit more personality? Check out <a
-						href="https://github.com/Charca/astro-blog-template"
-						>astro-blog-template
-					</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-				</p>
+			<section class="h-screen w-screen">
+				<div class="max-h-screen flex flex-row justify-center w-full">
+					<div class="absolute z-10">
+						<div class="h-screen w-screen hero-design bg-cover bg-fixed" />
+					</div>
+					<div class="h-screen w-screen flex justify-center flex-col z-20 items-center">
+						<div>
+							<h3 class="text-white text-xl sm:text-2xl text-center sm:text-left font-main">so sometimes i</h3>
+							<GradientText className="sm:text-7xl text-6xl bg-white">Design</GradientText>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="h-screen w-screen">
+				<div class="max-h-screen flex flex-row justify-center w-full">
+					<div class="absolute z-10">
+						<div class="h-screen w-screen hero-code bg-cover bg-fixed" />
+					</div>
+					<div class="h-screen w-screen flex justify-center flex-col z-20 items-center">
+						<div>
+							<h3 class="text-white text-xl sm:text-2xl text-center sm:text-left font-main">and yeah i</h3>
+							<GradientText className="sm:text-7xl text-6xl bg-white">Code</GradientText>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="bg-black h-screen z-50">
+				content
 			</div>
-
 		</main>
 		<Footer />
 	</body>

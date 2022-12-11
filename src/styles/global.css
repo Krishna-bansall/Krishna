@@ -4,7 +4,7 @@
 body {
 	font-family: 'Poppins', sans-serif;
 	margin: auto;
-	padding: 20px;
+	/* padding: 20px; */
 	overflow-x: hidden;
 	max-width: 100vw;
 	text-align: left;
@@ -66,4 +66,12 @@ blockquote {
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;
+}
+
+/* Custom CSS */
+.hero-design {
+	background-image: url('/images/design.svg');
+}
+.hero-code {
+	background-image: url('/images/code.svg');
 }
